@@ -1,0 +1,37 @@
+<html>
+<head>
+
+<meta name= "description" content="ejemplo HTML5"/>
+<meta name="keywords" content="HTML5,css3,javascrip"/>
+<title> PROGRAMA DE TABLAL</title><br>
+<link rel= "stylesheet" href="estil.css"/>
+</head>
+
+<body>
+
+<?php
+$numero=1;
+echo"<table>";
+
+for($i=1;$i<=10;$i++){
+echo"<tr>";
+$clase='';
+if($i%2 == 0){
+$clase='class="par"';
+}else{
+$clase='class="non"';
+}
+
+for($c=1;$c<=10;$c++){
+echo "<td $clase>$numero</td>";
+$numero++;
+}
+echo"</tr>";
+}
+
+
+echo"</table>";
+
+?>
+</body>
+</html>
